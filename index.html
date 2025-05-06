@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amirhossein Amani</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- AOS Library for Scroll Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
+  <header class="hero" id="home">
     <div class="container">
-      <h1>Amirhossein Amani</h1>
-      <p>Web Developer | Computer Engineer</p>
-      <button onclick="toggleLang()">فارسی</button>
+      <h1 data-aos="fade-down">Amirhossein Amani</h1>
+      <p data-aos="fade-up">Frontend Developer | Computer Engineer</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <section id="about">
-    <div class="container">
+    <div class="container" data-aos="fade-right">
       <h2>About Me</h2>
-      <p>Hello! I’m Amirhossein, a computer engineering student passionate about web design and creative development.</p>
+      <p>I'm Amirhossein Amani, a passionate Frontend Developer and Computer Engineering student at Istinye University. I specialize in creating responsive and interactive web applications.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container" data-aos="fade-left">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
     </div>
   </section>
 
   <section id="projects">
-    <div class="container">
+    <div class="container" data-aos="fade-right">
       <h2>Projects</h2>
       <ul>
         <li>Smart Gym Website</li>
@@ -33,17 +53,29 @@
   </section>
 
   <section id="contact">
-    <div class="container">
+    <div class="container" data-aos="fade-left">
       <h2>Contact</h2>
-      <p>Email: amirhossein@example.com</p>
-      <p>GitHub: github.com/amirhosseinamani</p>
+      <p>Email: <a href="mailto:amiramani8384@gmail.com">amiramani8384@gmail.com</a></p>
+      <p>Phone: <a href="tel:+905369121434">+90 536 912 1434</a></p>
+      <p>
+        <a href="https://www.linkedin.com/in/amirhossein-amani-86a980330" target="_blank">
+          <img src="linkedin-icon.png" alt="LinkedIn" width="24" height="24" />
+          LinkedIn Profile
+        </a>
+      </p>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Amirhossein Amani</p>
+    <div class="container">
+      <p>&copy; 2025 Amirhossein Amani</p>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- AOS Library JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
