@@ -1,3 +1,4 @@
+
 let currentLang = 'en';
 function switchLang() {
   currentLang = currentLang === 'en' ? 'fa' : 'en';

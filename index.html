@@ -3,56 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amirhossein Amani</title>
+  <title>Devodeep | Amirhossein Amani</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a2e8f1f3ce.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="hero" id="home">
-    <div class="container">
-      <h1 data-en="Amirhossein Amani" data-fa="امیرحسین امانی" class="lang">Amirhossein Amani</h1>
-      <p data-en="Frontend Developer | Computer Engineer" data-fa="توسعه‌دهنده فرانت‌اند | مهندس کامپیوتر" class="lang">Frontend Developer | Computer Engineer</p>
+    <div class="lang-toggle">
       <button onclick="switchLang()">فارسی</button>
+    </div>
+    <div class="container">
+      <div class="brand">Devodeep</div>
+      <h1 class="lang" data-en="Amirhossein Amani" data-fa="امیرحسین امانی">Amirhossein Amani</h1>
+      <p class="lang" data-en="Frontend Developer | Computer Engineer" data-fa="توسعه‌دهنده فرانت‌اند | مهندس کامپیوتر">Frontend Developer | Computer Engineer</p>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#certs">Certificates</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+          <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+          <li><a href="#certs"><i class="fas fa-certificate"></i> Certificates</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section id="about">
-    <div class="container" data-aos="fade-right">
+  <section id="about" class="highlight-hover">
+    <div class="container" data-aos="fade-up">
       <h2 class="lang" data-en="About Me" data-fa="درباره من">About Me</h2>
-      <p class="lang" data-en="I'm a Frontend Developer skilled in building interactive and responsive websites."
-         data-fa="من توسعه‌دهنده‌ی فرانت‌اند هستم که در ساخت وب‌سایت‌های تعاملی و ریسپانسیو تخصص دارم.">
-         I'm a Frontend Developer skilled in building interactive and responsive websites.
+      <p class="lang" data-en="I'm a creative and motivated frontend developer based in Istanbul. I study Computer Engineering at Istinye University. I enjoy building intuitive user interfaces, love team collaboration, and thrive in creative environments."
+         data-fa="من توسعه‌دهنده‌ی خلاق و با انگیزه‌ی فرانت‌اند هستم که در استانبول زندگی می‌کنم. در حال تحصیل در رشته مهندسی کامپیوتر در دانشگاه ایستینیه هستم. عاشق طراحی رابط‌های کاربری شهودی هستم، به کار تیمی علاقه دارم و از محیط‌های خلاقانه لذت می‌برم.">
+        I'm a creative and motivated frontend developer based in Istanbul...
       </p>
     </div>
   </section>
 
   <section id="experience">
     <div class="container" data-aos="fade-left">
-      <h2 class="lang" data-en="Work Experience" data-fa="سابقه کاری">Work Experience</h2>
+      <h2>Experience</h2>
       <p><strong>Kalem Yazılım</strong> — Frontend Developer</p>
     </div>
   </section>
 
   <section id="education">
     <div class="container" data-aos="fade-right">
-      <h2 class="lang" data-en="Education" data-fa="تحصیلات">Education</h2>
-      <p><strong>Istinye University, Istanbul</strong> (2024 - 2028) — Computer Engineering</p>
+      <h2>Education</h2>
+      <p><strong>Istinye University</strong> (2024 - 2028)</p>
       <p><strong>Allameh Helli School</strong> — Master of Computer Applications</p>
     </div>
   </section>
 
   <section id="certs">
     <div class="container" data-aos="fade-left">
-      <h2 class="lang" data-en="Certificates" data-fa="گواهینامه‌ها">Certificates</h2>
+      <h2>Certificates</h2>
       <ul>
         <li>Responsive Web Design — freeCodeCamp (Jan 2025)</li>
         <li>Digital Assets Protection & Cybersecurity — Istinye University (Jan 2025)</li>
@@ -60,14 +64,26 @@
     </div>
   </section>
 
+  <section id="languages">
+    <div class="container" data-aos="fade-right">
+      <h2>Languages</h2>
+      <ul class="stars">
+        <li>فارسی - ★★★★★</li>
+        <li>ترکی - ★★★★★</li>
+        <li>آذری - ★★★★★</li>
+        <li>English - ★★★☆☆</li>
+      </ul>
+    </div>
+  </section>
+
   <section id="contact">
     <div class="container" data-aos="fade-up">
-      <h2 class="lang" data-en="Contact" data-fa="تماس با من">Contact</h2>
+      <h2>Contact</h2>
       <p>Email: <a href="mailto:amiramani8384@gmail.com">amiramani8384@gmail.com</a></p>
       <p>Phone: <a href="tel:+905369121434">+90 536 912 1434</a></p>
       <p>
         <a href="https://www.linkedin.com/in/amirhossein-amani-86a980330" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="24" height="24" alt="LinkedIn"/> LinkedIn
+          <i class="fab fa-linkedin"></i> LinkedIn
         </a>
       </p>
     </div>
@@ -75,7 +91,7 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Amirhossein Amani</p>
+      <p>&copy; 2025 Devodeep | Amirhossein Amani</p>
     </div>
   </footer>
 
