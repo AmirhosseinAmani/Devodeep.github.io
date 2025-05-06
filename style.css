@@ -1,10 +1,9 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #101020;
-  color: #f0f0f0;
-  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f6f6f6;
+  color: #1a1a1a;
 }
 .container {
   width: 90%;
@@ -13,66 +12,40 @@ body {
   padding: 60px 0;
 }
 .hero {
-  background: linear-gradient(120deg, #1f1c2c, #928dab);
-  color: white;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
   padding: 100px 20px;
-  position: relative;
   text-align: center;
 }
-.brand {
-  font-size: 1.8rem;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.logo {
+  font-size: 24px;
   font-weight: bold;
-  position: absolute;
-  top: 15px;
-  left: 20px;
-  color: #ffb400;
-}
-.lang-toggle {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-}
-button {
-  background: #6a11cb;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 6px 14px;
-  cursor: pointer;
 }
 nav ul {
   display: flex;
   list-style: none;
-  justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
-  padding: 0;
 }
 nav ul li a {
-  color: white;
   text-decoration: none;
+  color: #1a1a1a;
   font-weight: bold;
-  font-size: 1rem;
 }
-section {
-  border-top: 1px solid #2e2e4d;
+.intro h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+.intro .tagline {
+  font-size: 20px;
+  color: #444;
 }
 h2 {
-  color: #ffb400;
-}
-ul.stars {
-  list-style: none;
-  padding: 0;
-}
-ul.stars li {
-  font-size: 1.1rem;
-  margin-bottom: 6px;
-}
-footer {
-  text-align: center;
-  padding: 30px 0;
-  font-size: 0.85rem;
-  border-top: 1px solid #444;
+  color: #5a189a;
 }
 .highlight-hover {
   opacity: 0.6;
@@ -81,15 +54,48 @@ footer {
 .highlight-hover:hover {
   opacity: 1;
 }
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-form .form-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+input, textarea {
+  padding: 10px;
+  font-size: 1rem;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background: #5a189a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background: #222;
+  color: white;
+}
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
+    gap: 10px;
   }
-  .brand {
-    font-size: 1.2rem;
-    left: 10px;
-  }
-  .lang-toggle {
-    right: 10px;
+  .intro h1 {
+    font-size: 32px;
   }
 }

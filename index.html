@@ -5,98 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Devodeep | Amirhossein Amani</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/a2e8f1f3ce.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="hero" id="home">
-    <div class="lang-toggle">
-      <button onclick="switchLang()">فارسی</button>
-    </div>
+  <header class="hero">
     <div class="container">
-      <div class="brand">Devodeep</div>
-      <h1 class="lang" data-en="Amirhossein Amani" data-fa="امیرحسین امانی">Amirhossein Amani</h1>
-      <p class="lang" data-en="Frontend Developer | Computer Engineer" data-fa="توسعه‌دهنده فرانت‌اند | مهندس کامپیوتر">Frontend Developer | Computer Engineer</p>
       <nav>
+        <div class="logo">Devodeep</div>
         <ul>
-          <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-          <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
-          <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
-          <li><a href="#certs"><i class="fas fa-certificate"></i> Certificates</a></li>
-          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certs">Certificates</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <div class="intro">
+        <h1>Amirhossein Amani</h1>
+        <p class="tagline">Creative Frontend Developer & Computer Engineering Student</p>
+      </div>
     </div>
   </header>
 
-  <section id="about" class="highlight-hover">
-    <div class="container" data-aos="fade-up">
-      <h2 class="lang" data-en="About Me" data-fa="درباره من">About Me</h2>
-      <p class="lang" data-en="I'm a creative and motivated frontend developer based in Istanbul. I study Computer Engineering at Istinye University. I enjoy building intuitive user interfaces, love team collaboration, and thrive in creative environments."
-         data-fa="من توسعه‌دهنده‌ی خلاق و با انگیزه‌ی فرانت‌اند هستم که در استانبول زندگی می‌کنم. در حال تحصیل در رشته مهندسی کامپیوتر در دانشگاه ایستینیه هستم. عاشق طراحی رابط‌های کاربری شهودی هستم، به کار تیمی علاقه دارم و از محیط‌های خلاقانه لذت می‌برم.">
-        I'm a creative and motivated frontend developer based in Istanbul...
+  <section id="about">
+    <div class="container highlight-hover">
+      <h2>About Me</h2>
+      <p>
+        I'm Amirhossein, a passionate and creative frontend developer based in Istanbul, Turkey. I study Computer Engineering at Istinye University. 
+        I enjoy building elegant, responsive, and interactive websites that enhance user experience. I love teamwork, value clean design, and always seek new challenges.
       </p>
     </div>
   </section>
 
   <section id="experience">
-    <div class="container" data-aos="fade-left">
+    <div class="container">
       <h2>Experience</h2>
       <p><strong>Kalem Yazılım</strong> — Frontend Developer</p>
     </div>
   </section>
 
   <section id="education">
-    <div class="container" data-aos="fade-right">
+    <div class="container">
       <h2>Education</h2>
-      <p><strong>Istinye University</strong> (2024 - 2028)</p>
+      <p><strong>Istinye University</strong> (2024 - 2028) — BSc in Computer Engineering</p>
       <p><strong>Allameh Helli School</strong> — Master of Computer Applications</p>
     </div>
   </section>
 
   <section id="certs">
-    <div class="container" data-aos="fade-left">
+    <div class="container">
       <h2>Certificates</h2>
       <ul>
         <li>Responsive Web Design — freeCodeCamp (Jan 2025)</li>
-        <li>Digital Assets Protection & Cybersecurity — Istinye University (Jan 2025)</li>
+        <li>Cybersecurity Strategies — Istinye University (Jan 2025)</li>
       </ul>
     </div>
   </section>
 
-  <section id="languages">
-    <div class="container" data-aos="fade-right">
-      <h2>Languages</h2>
-      <ul class="stars">
-        <li>فارسی - ★★★★★</li>
-        <li>ترکی - ★★★★★</li>
-        <li>آذری - ★★★★★</li>
-        <li>English - ★★★☆☆</li>
-      </ul>
+  <section id="location">
+    <div class="container">
+      <h2>Location</h2>
+      <p>Istanbul, Turkey</p>
     </div>
   </section>
 
   <section id="contact">
-    <div class="container" data-aos="fade-up">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:amiramani8384@gmail.com">amiramani8384@gmail.com</a></p>
-      <p>Phone: <a href="tel:+905369121434">+90 536 912 1434</a></p>
-      <p>
-        <a href="https://www.linkedin.com/in/amirhossein-amani-86a980330" target="_blank">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-      </p>
+    <div class="container contact-form">
+      <h2>Contact Me</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required />
+          <input type="text" placeholder="Company Name" />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Phone" />
+        </div>
+        <textarea placeholder="A few words about your project..." required></textarea>
+        <button type="submit">Submit Request</button>
+      </form>
     </div>
   </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Devodeep | Amirhossein Amani</p>
-    </div>
+    <p>&copy; 2025 Devodeep | Amirhossein Amani</p>
   </footer>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
-  <script>AOS.init();</script>
 </body>
 </html>
